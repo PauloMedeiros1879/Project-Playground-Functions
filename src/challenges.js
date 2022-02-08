@@ -122,7 +122,11 @@ function decode() {
 }
 // Desafio 10
 function techList() {
-  // seu código aqui
+  let tech = ["React", "Jest", "HTML", "CSS", "JavaScript"];
+  let myName = "Paulo";
+  for (let list = 0; list <= tech.length; list =+ 1){
+    return  myName + ' ' + tech[4];
+    } 
 }
 
 module.exports = {

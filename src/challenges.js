@@ -20,13 +20,15 @@ function splitSentence(trybe) {
 }
 
 // Desafio 4
-function concatName(names) {
-  if (concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'].concat(0, 3))){
-    return names;
-  } else if (concatName(['foguete', 'não', 'tem', 'ré'].concat(3, 0))){
-    return names;
-  } else if (concatName(['captain', 'my', 'captain'].concat(0, 2))){
-    return [0, 2];
+function concatName() {
+  if (names = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']){
+    return names = (names[3] + ', ' + names[0]);
+  }
+  if (names2 = ['foguete', 'não', 'tem', 'ré']){
+    return names2 = (names2[3] + ', ' + names2[0]);
+  }
+  if (names3 = ['captain', 'my', 'captain']){
+    return names3 = (names3[2] + ', ' + names3[0]);
   }
 }
 
@@ -34,9 +36,6 @@ function concatName(names) {
 function footballPoints(wins, ties){
   //erro
 }
-  
-  
-
 // Desafio 6
 function highestCount(array) {
   let maxNumber = array[0];

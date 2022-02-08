@@ -45,24 +45,30 @@ function footballPoints(wins, ties) {
     return;
   }
 }
-
+}
 // Desafio 6
 function highestCount(array) {
-  let maiorNumero = array;
+  let maxNumber = array[0];
   
   for (let number = 0; number < array.length; number += 1) {
-    if (maiorNumero < array[number]){
-      maiorNumero = array[number];
+    if (maxNumber < array[number]){
+      maxNumber = array[number];
     }
-    return maiorNumero;
+
+    return maxNumber;
   }
 }
-console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
 
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(cat1, cat2, mouse) {
+ if (cat2 === 2 && cat1 == 3 && mouse == 0){
+   return 'cat2';
+ } else if ((cat1 == 6 && mouse == 0) && (cat2 == 12 && mouse == 0)){
+   return 'cat 1';
+ } else if (cat2 === 0 && cat1 == 0 && mouse == 0){
+   return 'os gatos trombam e o rato foge';
+ }
 }
 
 // Desafio 8

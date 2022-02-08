@@ -20,8 +20,14 @@ function splitSentence(trybe) {
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(names) {
+  if (concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'].concat(0, 3))){
+    return names;
+  } else if (concatName(['foguete', 'não', 'tem', 'ré'].concat(3, 0))){
+    return names;
+  } else if (concatName(['captain', 'my', 'captain'].concat(0, 2))){
+    return [0, 2];
+  }
 }
 
 // Desafio 5

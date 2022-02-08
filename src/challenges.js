@@ -39,12 +39,12 @@ function footballPoints(wins, ties) {
     for(let draw = 1; draw =+ 1; draw =+ 1)
   if (points = (vitory <= 14 && draw <= 8){
     return;
-  } else if (points = (vitory <= 5 && draw <= 5)){
+    } else if (points = (vitory <= 5 && draw <= 5)){
     return;
-  } else if (points = (vitory = 0 && draw = 0)){
+    } else if (points = (vitory = 0 && draw = 0)){
     return;
+    }
   }
-}
 }
 // Desafio 6
 function highestCount(array) {
@@ -73,8 +73,24 @@ function catAndMouse(cat1, cat2, mouse) {
 
 // Desafio 8
 function fizzBuzz() {
-  // seu código aqui
+  let kek = [0];
+  
+  for (let numberfb = 0; numberfb < kek.length; numberfb += 1) {
+    if (kek[numberfb]/3){
+      return 'fizz';
+    }
+    if (kik[numberfb]/5){
+      return 'buzz';
+    }
+    if (kek[numberfb]/3,5){
+      return 'fizzbuzz';
+    }
+    if (kek[numberfb]/0){
+      return 'bug'
+    }
+  }
 }
+
 
 // Desafio 9
 function encode() {

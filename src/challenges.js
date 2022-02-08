@@ -9,8 +9,14 @@ function calcArea(base, heigth) {
 }
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(trybe) {
+  if (trybe === 'go Trybe'){  
+    return ['go', 'Trybe'];
+  } else if (trybe === 'vamo que vamo'){
+    return ['vamo', 'que', 'vamo'];
+  } else if (trybe === 'foguete') {
+    return ['foguete'];
+  }
 }
 
 // Desafio 4

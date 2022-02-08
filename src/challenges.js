@@ -37,19 +37,28 @@ function footballPoints(wins, ties) {
   points = 0;
   for(let vitory = 3; wins =+ 3; vitory =+3){
     for(let draw = 1; draw =+ 1; draw =+ 1)
-  if (vitory <= 14 && draw <= 8){
-    return points;
-  } else if (vitory <= 5 && draw <= 5)
-    return points;
-  } else if (vitory = 0 && draw = 0){
-    return points;
+  if (points = (vitory <= 14 && draw <= 8){
+    return;
+  } else if (points = (vitory <= 5 && draw <= 5)){
+    return;
+  } else if (points = (vitory = 0 && draw = 0)){
+    return;
   }
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(array) {
+  let maiorNumero = array;
+  
+  for (let number = 0; number < array.length; number += 1) {
+    if (maiorNumero < array[number]){
+      maiorNumero = array[number];
+    }
+    return maiorNumero;
+  }
 }
+console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
+
 
 // Desafio 7
 function catAndMouse() {

@@ -31,30 +31,20 @@ function concatName(names) {
 }
 
 // Desafio 5
-function footballPoints(wins, ties) {
-  wins = 3;
-  ties = 1;
-  points = 0;
-  for(let vitory = 3; wins =+ 3; vitory =+3){
-    for(let draw = 1; draw =+ 1; draw =+ 1)
-  if (points = (vitory <= 14 && draw <= 8){
-    return;
-    } else if (points = (vitory <= 5 && draw <= 5)){
-    return;
-    } else if (points = (vitory = 0 && draw = 0)){
-    return;
-    }
-  }
+function footballPoints(wins, ties){
+  //erro
 }
+  
+  
+
 // Desafio 6
 function highestCount(array) {
   let maxNumber = array[0];
   
   for (let number = 0; number < array.length; number += 1) {
-    if (maxNumber < array[number]){
+    if (maxNumber <= array[number]){
       maxNumber = array[number];
-    }
-
+    } 
     return maxNumber;
   }
 }
@@ -79,7 +69,7 @@ function fizzBuzz() {
     if (kek[numberfb]/3){
       return 'fizz';
     }
-    if (kik[numberfb]/5){
+    if (kek[numberfb]/5){
       return 'buzz';
     }
     if (kek[numberfb]/3,5){

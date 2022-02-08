@@ -49,7 +49,6 @@ function highestCount(array) {
   }
 }
 
-
 // Desafio 7
 function catAndMouse(cat1, cat2, mouse) {
  if (cat2 === 2 && cat1 == 3 && mouse == 0){
@@ -76,20 +75,51 @@ function fizzBuzz() {
       return 'fizzbuzz';
     }
     if (kek[numberfb]/0){
-      return 'bug'
+      return 'bug';
     }
   }
 }
 
-
 // Desafio 9
 function encode() {
-  // seu código aqui
+  let stringen = "hello";
+  if(stringen.replace("a", 1)){
+    return stringen;
+  }
+  if(stringen.replace("e", 2)){
+    return stringe;
+  }
+  if(stringen.replace("i", 3)){
+    return stringe;
+  }
+  if(stringen.replace("o", 4)){
+    return stringe;
+  }
+  if(stringen.replace("u", 5)){
+   return stringe;
+  }
+  if(stringen.replace("a", 1)){
+    return stringe;
+  }
 }
 function decode() {
-  // seu código aqui
+  let stringde = "h2ll4";
+  if(stringde.replace(1, "a")){
+    return stringde;
+  }
+  if (stringde.replace(2, "e")){
+    return stringde;
+  }
+  if (stringde.replace(3, "i")){
+    return stringde;
+  }
+  if (stringde.replace(4, "o")){
+    return stringde;
+  }
+  if (stringde.replace(5, "u")){
+   return stringde;
+  }
 }
-
 // Desafio 10
 function techList() {
   // seu código aqui

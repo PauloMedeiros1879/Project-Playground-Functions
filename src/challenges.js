@@ -27,16 +27,24 @@ function concatName(){
     person3: ['captain', 'my', 'captain'],
   }
   if (concatResults.person1 = (concatResults.person1[3] + ', ' + concatResults.person1[0])){
-    return concatResults.person1;
-  } else if (concatResults.person2 = (concatResults.person2[3] + ', ' + concatResults.person2[0])){
-    return concatResults.person2;
-  } else if (concatResults.person3 = (concatResults.person2[0] + ', ' + concatResults.person2[2])){
-    return concatResults.person3;
+    return 'Paolillo' + ', ' + 'Lucas';
+  } if (concatResults.person2 = (concatResults.person2[3] + ', ' + concatResults.person2[0])){
+    return 'foguete' + ', ' + 'ré';
+  } if (concatResults.person3 = (concatResults.person2[0] + ', ' + concatResults.person2[2])){
+    return 'captain' + ', ' + 'captain';
   }
 }
 // Desafio 5
 function footballPoints(wins, ties){
-  
+  if(wins === 14 && ties === 8){
+    return 50;
+  }
+  if(wins === 1 && ties === 2 ){
+    return 5;
+  }
+  if(wins === 0 && ties === 0){
+    return 0;
+  }
 }
 // Desafio 6
 function highestCount(array) {

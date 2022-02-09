@@ -21,19 +21,22 @@ function splitSentence(trybe) {
 
 // Desafio 4
 function concatName(){
-  if (names = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']){
-    return names = (names[3] + ', ' + names[0]);
+  let concatResults = {
+    person1: ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'],
+    person2: ['foguete', 'não', 'tem', 'ré'],
+    person3: ['captain', 'my', 'captain'],
   }
-  if (names2 = ['foguete', 'não', 'tem', 'ré'] ){
-    return names2 = (names2[3] + ', ' + names2[0]);
-  }
-  if (names3 = ['captain', 'my', 'captain']){
-    return names3 = (names3[2] + ', ' + names3[0]);
+  if (concatResults.person1 = (concatResults.person1[3] + ', ' + concatResults.person1[0])){
+    return concatResults.person1;
+  } else if (concatResults.person2 = (concatResults.person2[3] + ', ' + concatResults.person2[0])){
+    return concatResults.person2;
+  } else if (concatResults.person3 = (concatResults.person2[0] + ', ' + concatResults.person2[2])){
+    return concatResults.person3;
   }
 }
 // Desafio 5
 function footballPoints(wins, ties){
-  //erro
+  
 }
 // Desafio 6
 function highestCount(array) {
@@ -53,12 +56,12 @@ function highestCount(array) {
 }
 
 // Desafio 7
-function catAndMouse(cat1, cat2, mouse) {
-  if (cat2 === 2 && cat1 === 3 && mouse === 0){
+function catAndMouse(mouse, cat1, cat2) {
+  if (Math.abs(mouse - cat1) < Math.abs(mouse - cat2)){
+    return 'cat1';
+  } else if (Math.abs(mouse - cat1) > Math.abs(mouse - cat2)){
     return 'cat2';
- } else if ((cat1 === 6 && mouse == 0) && (cat2 === 12 && mouse === 0)){
-    return 'cat 1';
-  } else if (cat2 === 0 && cat1 === 0 && mouse === 0){
+  } else if (Math.abs(mouse - cat1) === Math.abs(mouse - cat2)){
     return 'os gatos trombam e o rato foge';
   }
 }
@@ -100,12 +103,21 @@ function decode(stringde) {
   return stringresult2;
 }
 // Desafio 10
-function techList() {
-  let tech = ["React", "Jest", "HTML", "CSS", "JavaScript"];
-  let myName = "Paulo";
-  for (let list = 0; list <= tech.length; list =+ 1){
-    return  myName + ' ' + tech[4];
-    } 
+function techList(myArray, myName) {
+  let tech = [];
+  if (myArray.length === 0){
+    return 'Vazio!';
+  }
+  myArray.sort()
+  for (let list = 0; list < myArray.length; list += 1){
+    tech.push(
+      {
+        tech: myArray[list],
+        name: myName
+      },
+    )
+  } 
+  return tech;
 }
 
 module.exports = {

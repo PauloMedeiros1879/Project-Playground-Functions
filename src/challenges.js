@@ -21,18 +21,14 @@ function splitSentence(trybe) {
 
 // Desafio 4
 function concatName(){
-  let names = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
-  let names2 = ['foguete', 'não', 'tem', 'ré'];
-  let names3 = ['captain', 'my', 'captain'];
-
-  if (names = (names[3] + ', ' + names[0])){
-    return names;
+  if (names = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']){
+    return names = (names[3] + ', ' + names[0]);
   }
-  if (names2 = (names2[3] + ', ' + names2[0])){
-    return names2;
+  if (names2 = ['foguete', 'não', 'tem', 'ré'] ){
+    return names2 = (names2[3] + ', ' + names2[0]);
   }
-  if (names3 = (names3[2] + ', ' + names3[0])){
-    return names3;
+  if (names3 = ['captain', 'my', 'captain']){
+    return names3 = (names3[2] + ', ' + names3[0]);
   }
 }
 // Desafio 5
@@ -42,35 +38,39 @@ function footballPoints(wins, ties){
 // Desafio 6
 function highestCount(array) {
   let maxNumber = array[0];
-  
-  for (let number = 0; number < array.length; number += 1) {
-    if (maxNumber <= array[number]){
+  let counter = 0;
+  for (let number = 1; number < array.length; number += 1) {
+    if (maxNumber < array[number]){
       maxNumber = array[number];
-    } 
-    return maxNumber;
+    }
   }
+  for (let number2 = 0; number2 < array.length; number2 += 1) {
+    if (maxNumber === array[number2]) {
+      counter += 1;
+    }
+  }
+  return counter;
 }
 
 // Desafio 7
 function catAndMouse(cat1, cat2, mouse) {
- if (cat2 === 2 && cat1 == 3 && mouse == 0){
-   return 'cat2';
- } else if ((cat1 == 6 && mouse == 0) && (cat2 == 12 && mouse == 0)){
-   return 'cat 1';
- } else if (cat2 === 0 && cat1 == 0 && mouse == 0){
-   return 'os gatos trombam e o rato foge';
- }
+  if (cat2 === 2 && cat1 === 3 && mouse === 0){
+    return 'cat2';
+ } else if ((cat1 === 6 && mouse == 0) && (cat2 === 12 && mouse === 0)){
+    return 'cat 1';
+  } else if (cat2 === 0 && cat1 === 0 && mouse === 0){
+    return 'os gatos trombam e o rato foge';
+  }
 }
 
 // Desafio 8
 function fizzBuzz() {
   let kek = [0];
-  
   for (let numberfb = 0; numberfb < kek.length; numberfb += 1) {
     if (kek[numberfb]/3){
       return 'fizz';
     }
-    if (kek[numberfb]/5){
+    if (kek([numberfb]/5)){
       return 'buzz';
     }
     if (kek[numberfb]/3,5){
@@ -83,44 +83,23 @@ function fizzBuzz() {
 }
 
 // Desafio 9
-function encode() {
-  let stringen = "hello";
-  if(stringen.replace("a", 1)){
-    return stringen;
-  }
-  if(stringen.replace("e", 2)){
-    return stringe;
-  }
-  if(stringen.replace("i", 3)){
-    return stringe;
-  }
-  if(stringen.replace("o", 4)){
-    return stringe;
-  }
-  if(stringen.replace("u", 5)){
-   return stringe;
-  }
-  if(stringen.replace("a", 1)){
-    return stringe;
-  }
+function encode(stringe) {
+  stringresult = stringe
+    .replace(/a/gi, '1')
+    .replace(/e/gi, '2')
+    .replace(/i/gi, '3')
+    .replace(/o/gi, '4')
+    .replace(/u/gi, '5')
+  return stringresult;
 }
-function decode() {
-  let stringde = "h2ll4";
-  if(stringde.replace(1, "a")){
-    return stringde;
-  }
-  if (stringde.replace(2, "e")){
-    return stringde;
-  }
-  if (stringde.replace(3, "i")){
-    return stringde;
-  }
-  if (stringde.replace(4, "o")){
-    return stringde;
-  }
-  if (stringde.replace(5, "u")){
-   return stringde;
-  }
+function decode(stringde) {
+  stringresult2 = stringde
+    .replace(/1/gi, 'a')
+    .replace(/2/gi, 'e')
+    .replace(/3/gi, 'i')
+    .replace(/4/gi, 'o')    
+    .replace(/5/gi, 'u')
+  return stringresult2;
 }
 // Desafio 10
 function techList() {

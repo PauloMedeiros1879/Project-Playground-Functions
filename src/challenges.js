@@ -64,22 +64,20 @@ function catAndMouse(cat1, cat2, mouse) {
 }
 
 // Desafio 8
-function fizzBuzz() {
-  let kek = [0];
-  for (let numberfb = 0; numberfb < kek.length; numberfb += 1) {
-    if (kek[numberfb]/3){
-      return 'fizz';
-    }
-    if (kek([numberfb]/5)){
-      return 'buzz';
-    }
-    if (kek[numberfb]/3,5){
-      return 'fizzbuzz';
-    }
-    if (kek[numberfb]/0){
-      return 'bug';
+function fizzBuzz(fb){
+  let kek = [];
+  for (let numberf = 0; numberf < fb.length; numberf += 1) {
+    if (fb[numberf] % 5 === 0 && fb[numberf] % 3 === 0){
+      kek.push('fizzBuzz');
+    } else if (fb[numberf] % 5 === 0){
+      kek.push('buzz');
+    } else if (fb[numberf] % 3 === 0){
+      kek.push('fizz');
+    } else {
+      kek.push ('bug!');
     }
   }
+  return kek;
 }
 
 // Desafio 9

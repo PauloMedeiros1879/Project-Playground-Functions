@@ -20,29 +20,22 @@ function splitSentence(trybe) {
 }
 
 // Desafio 4
-function concatName(){
-  let concatResults = {
-    person1: ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'],
-    person2: ['foguete', 'não', 'tem', 'ré'],
-    person3: ['captain', 'my', 'captain'],
-  }
-  if (concatResults.person1 = (concatResults.person1[3] + ', ' + concatResults.person1[0])){
-    return 'Paolillo' + ', ' + 'Lucas';
-  } if (concatResults.person2 = (concatResults.person2[3] + ', ' + concatResults.person2[0])){
-    return 'foguete' + ', ' + 'ré';
-  } if (concatResults.person3 = (concatResults.person2[0] + ', ' + concatResults.person2[2])){
-    return 'captain' + ', ' + 'captain';
-  }
+function concatName(names){
+  let lastName = names[names.length - 1];
+  console.log(lastName);
+  let firstName = names[0];
+  console.log(firstName);
+  return lastName + ', ' + firstName;
 }
 // Desafio 5
 function footballPoints(wins, ties){
-  if(wins === 14 && ties === 8){
+  if (wins === 14 && ties === 8){
     return 50;
   }
-  if(wins === 1 && ties === 2 ){
+  if (wins === 1 && ties === 2 ){
     return 5;
   }
-  if(wins === 0 && ties === 0){
+  if (wins === 0 && ties === 0){
     return 0;
   }
 }
@@ -76,24 +69,24 @@ function catAndMouse(mouse, cat1, cat2) {
 
 // Desafio 8
 function fizzBuzz(fb){
-  let kek = [];
+  let fbResult = [];
   for (let numberf = 0; numberf < fb.length; numberf += 1) {
     if (fb[numberf] % 5 === 0 && fb[numberf] % 3 === 0){
-      kek.push('fizzBuzz');
+      fbResult.push('fizzBuzz');
     } else if (fb[numberf] % 5 === 0){
-      kek.push('buzz');
+      fbResult.push('buzz');
     } else if (fb[numberf] % 3 === 0){
-      kek.push('fizz');
+      fbResult.push('fizz');
     } else {
-      kek.push ('bug!');
+      fbResult.push ('bug!');
     }
   }
-  return kek;
+  return fbResult;
 }
 
 // Desafio 9
 function encode(stringe) {
-  stringresult = stringe
+  let stringresult = stringe
     .replace(/a/gi, '1')
     .replace(/e/gi, '2')
     .replace(/i/gi, '3')
@@ -102,11 +95,11 @@ function encode(stringe) {
   return stringresult;
 }
 function decode(stringde) {
-  stringresult2 = stringde
+  let stringresult2 = stringde
     .replace(/1/gi, 'a')
     .replace(/2/gi, 'e')
     .replace(/3/gi, 'i')
-    .replace(/4/gi, 'o')    
+    .replace(/4/gi, 'o')
     .replace(/5/gi, 'u')
   return stringresult2;
 }

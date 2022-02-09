@@ -20,18 +20,21 @@ function splitSentence(trybe) {
 }
 
 // Desafio 4
-function concatName() {
-  if (names = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']){
-    return names = (names[3] + ', ' + names[0]);
+function concatName(){
+  let names = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+  let names2 = ['foguete', 'não', 'tem', 'ré'];
+  let names3 = ['captain', 'my', 'captain'];
+
+  if (names = (names[3] + ', ' + names[0])){
+    return names;
   }
-  if (names2 = ['foguete', 'não', 'tem', 'ré']){
-    return names2 = (names2[3] + ', ' + names2[0]);
+  if (names2 = (names2[3] + ', ' + names2[0])){
+    return names2;
   }
-  if (names3 = ['captain', 'my', 'captain']){
-    return names3 = (names3[2] + ', ' + names3[0]);
+  if (names3 = (names3[2] + ', ' + names3[0])){
+    return names3;
   }
 }
-
 // Desafio 5
 function footballPoints(wins, ties){
   //erro
